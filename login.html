@@ -32,30 +32,30 @@
     <div class="container d-flex mt-5">
         <div class="container col-lg-4">
             <h1 class="display-6 text-center mb-4">Login sin validar</h1>
-            <form action="" method="post">
+            <form action="php/loginN.php" method="post">
                 <div class="form-floating mb-3 text-muted">
-                    <input type="email" class="form-control" id="user" placeholder="Correo">
-                    <label for="floatingInput">Correo electrónico</label>
+                    <input type="text" class="form-control" id="userN" name="userN" placeholder="Usuario">
+                    <label for="floatingInput">Usuario</label>
                 </div>
                 <div class="form-floating mb-3 text-muted">
-                    <input type="password" class="form-control" id="pass" placeholder="Contraseña">
+                    <input type="password" class="form-control" id="passN" name="passN" placeholder="Contraseña">
                     <label for="floatingInput">Contraseña</label>
                 </div>
-                <button type="button" class="btn btn-primary">Ingresar</button>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
             </form>
         </div>
         <div class="container col-lg-4">
             <h1 class="display-6 text-center mb-4">Login validado</h1>
-            <form action="" method="post">
+            <form action="php/loginV.php" method="post">
                 <div class="form-floating mb-3 text-muted">
-                    <input type="email" class="form-control" id="user" placeholder="Correo">
-                    <label for="floatingInput">Correo electrónico</label>
+                    <input type="text" class="form-control" id="userV" name="userV" placeholder="Usuario">
+                    <label for="floatingInput">Usuario</label>
                 </div>
                 <div class="form-floating mb-3 text-muted">
-                    <input type="password" class="form-control" id="pass" placeholder="Contraseña">
+                    <input type="password" class="form-control" id="passV" name="passV" placeholder="Contraseña">
                     <label for="floatingInput">Contraseña</label>
                 </div>
-                <button type="button" class="btn btn-primary">Ingresar</button>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
             </form>
         </div>
     </div>
