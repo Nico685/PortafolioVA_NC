@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=test_hk', 'root', 'lilian');
+    $pdo = new PDO('mysql:host=localhost;dbname=test_hk', 'root', '');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     die("Error en la conexión: " . $e->getMessage());
@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['passV'];
 
     // Consulta preparada
-    $sql = "SELECT * FROM usuarios WHERE usuario = :username";
+    $sql = "SELECT * FROM usuarios WHERE nombre = :username";
     $stmt = $pdo->prepare($sql);
     $stmt->bindParam(':username', $username, PDO::PARAM_STR);
     $stmt->execute();
