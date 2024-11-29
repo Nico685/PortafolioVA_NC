@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    // Verificar si se encontró el usuario y si la contraseña coincide
+    // Verificar si se encontró el usuario
     if ($usuario) {
         session_start();
         $_SESSION['usuario'] = $usuario['usuario'];
