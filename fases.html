@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Fases de ataque</title>
 </head>
-<body class="text-white" style="background-color: #2d3236;">
+<body class="text-white" style="background-color: #2d3236; text-align: justify;">
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="navbar-expand ms-4 m-1">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -29,28 +29,251 @@
             </ul>
         </div>
     </nav>
-    <h1>Fases del Hacking</h1>
-    <h3>1. Fase de reconocimiento</h3>
-    <p>
-        En esta fase, el hacker se centra en la recoleccion de información sobre el objetivo que se busca atacar. Esto puede incluir direcciones IP, sistemas operativos y configuraciones de seguridad del sistema informatico de su empresa. 
-
-        Estos datos se pueden obtener de manera pasiva, al investigar datos públicos como sus sitios web o redes sociales, o tambien de manera activa, lo que implica obtener los datos por parte de terceros o tecnicas de rastreo mas invasivas.
-    </p>
-    <h3>2. Fase de escaneo</h3>
-    <p>
-        En esta fase se profundizan los conocimientos sobre el objetivo. Esto implica que, mediante el escaneo, el hacker se encarga de identificar los dispositivos, puertos, programas, servicios que se ejecutan. Ademas, investiga las vulnerabilidades.
-    </p>
-    <h3>3. Fase de acceso</h3>
-    <p>
-        En esta etapa, con los datos ya obtenidos, el hacker procede a simular ataques a los sistemas en un entorno controlado, para ingresar en ellos las vulnerabilidades identificadas. Aqui es donde comenzará a poner a prueba la capacidad defensiva de los sistemas ante ataques como inyecciones SQL, ataques XSS, etc.
-    </p>
-    <h3>4. Fase de mantenimiento de acceso</h3>
-    <p>
-        Una vez el hacker ya haya vulnerado el sistema, el trabajo consiste en mantener ese acceso el mayor tiempo posible, con el fin de realizar multiples ataques y asi obtener hackear el sistema. Para seguir dentro del objetivo infectado, el hacker puede hacer uso de malware para controlar los sistemas y equipos sin ser detectado.
-    </p>
-    <h3>5. Fase de borrado de huellas</h3>
-    <p>
-        Finalmente, la tarea final del hacker consiste en eliminar cualquier rastro de su presencia en el objetivo que se ha atacado (computadoras, sitios web, redes). Para esto puede ocultar su direccion IP, eliminar archivos de registro o utilizar conexiones cifradas.
-    </p>
+    <h1 class="m-5 fw-semibold">Fases del Hacking</h1>
+    <div class="m-5 p-3" style="border: solid 2px black; border-radius: 20px; background-color: rgb(112, 0, 0);">
+        <h3>1. Fase de reconocimiento</h3>
+        <p class="fs-5" style="text-align: justify;">
+            En esta fase, el hacker se centra en la recoleccion de información sobre el objetivo que se busca atacar. Esto puede incluir direcciones IP, sistemas operativos y configuraciones de seguridad del sistema informatico de su empresa. 
+            Estos datos se pueden obtener de manera pasiva, al investigar datos públicos como sus sitios web o redes sociales, o tambien de manera activa, lo que implica obtener los datos por parte de terceros o tecnicas de rastreo mas invasivas.
+        </p>
+        <h4>Herramientas de footprinting pasivo:</h4>
+        <ul class="fs-5">
+            <li class="text-decoration-underline">WHOIS:</li>
+            <p>Es un protocolo que permite obtener información sobre la registración de dominios, incluyendo detalles como propietario, fechas de creación y expiración, y servidores DNS asociados.</p>
+            <p>Link de acceso: <a href="https://who.is">https://who.is</a></p>
+            <li class="text-decoration-underline">Wayback Machine:</li>
+            <p>Es un servicio que archiva versiones anteriores de sitios web, permitiendo acceder a contenido histórico y detectar cambios o información eliminada.</p>
+            <p>Link de acceso: <a href="https://web.archive.org">https://web.archive.org</a></p>
+            <li class="text-decoration-underline">Netcraft:</li>
+            <p>Es un sitio web que ofrece información sobre sitios web, incluyendo tecnologías utilizadas, ubicación de servidores y historial de hosting.</p>
+            <p>Link de acceso: <a href="https://www.netcraft.com">https://www.netcraft.com</a></p>
+        </ul>
+        <h4>Herramientas de footprinting activo:</h4>
+        <ul class="fs-5">
+            <li class="text-decoration-underline">Consola de comandos</li>
+            <p>Interfaz de línea de comandos que permite ejecutar diversos comandos para interactuar con el sistema operativo y realizar tareas de red.</p>
+            <p>Comandos de ejemplo: "ping, tracert, nslookup"</p>
+            <li class="text-decoration-underline">Recon-NG</li>
+            <p>Framework de reconocimiento que facilita la recopilación de información mediante módulos automatizados, permitiendo realizar tareas de OSINT de manera eficiente.</p>
+            <p>Link de descarga: <a href="https://github.com/lanmaster53/recon-ng">https://github.com/lanmaster53/recon-ng</a></p>
+            <li class="text-decoration-underline">Nmap</li>
+            <p>Herramienta de escaneo de redes que permite descubrir hosts y servicios en una red, identificar puertos abiertos y detectar vulnerabilidades.</p>
+            <p>Link de descarga: <a href="https://nmap.org/download">https://nmap.org/download</a></p>
+            <p>Comandos de ejemplo: "nmap prismati.cl"</p>
+        </ul>
+        <br><h4>Medida de proteccion/mitigacion:</h4>
+        <ul class="fs-5">
+            <li>Limitar la exposición de información y proteger contra ingeniería social.</li>
+            <li>Bloqueo de IPs sospechosas asociadas a actividades de reconocimiento.</li>
+            <li>Monitoreo de tráfico entrante con sistemas de detección de intrusos (IDS).</li>
+            <li>Capacitación en ingeniería social para el personal.</li>
+        </ul>
+        <br><h4>Video capsula:</h4>
+        <iframe class="m-3" width="560" height="315" src="https://www.youtube.com/embed/qqgLYrclK18?si=a2ADQvYOvOc2SZBv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="m-5 p-3" style="border: solid 2px black; border-radius: 20px; background-color: rgb(133, 71, 0);">
+        <h3>2. Fase de escaneo</h3>
+        <p class="fs-5" style="text-align: justify;">
+            En esta fase se profundizan los conocimientos sobre el objetivo. Esto implica que, mediante el escaneo, el hacker se encarga de identificar los dispositivos, puertos, programas, servicios que se ejecutan. Ademas, investiga las vulnerabilidades.
+        </p>
+        <h4>Herramientas de scanning:</h4>
+        <ul class="fs-5">
+            <li class="text-decoration-underline">Nmap:</li>
+            <p>Es una herramienta de código abierto utilizada para el descubrimiento de redes y auditoría de seguridad. Permite identificar hosts y servicios en una red, detectar puertos abiertos y determinar el sistema operativo de los dispositivos conectados.</p>
+            <p>Link de descarga: <a href="https://nmap.org/download">https://nmap.org/download</a></p>
+            <p class="fw-bold">Comandos basicos:</p>
+            <ul>
+                <li><span class="text-info">nmap prismati.cl</span> - Escanea los 1,000 puertos TCP más comunes en el host prismati.cl</li>
+                <li><span class="text-info">nmap -p 20-80 prismati.cl</span> - Escanea los puertos TCP desde el 20 hasta el 80 en el host prismati.cl</li>
+                <li><span class="text-info">nmap -sV prismati.cl</span> - Detecta las versiones de los servicios que se ejecutan en los puertos abiertos del host prismati.cl</li>
+                <li><span class="text-info">nmap -O prismati.cl</span> - Intenta identificar el sistema operativo del host prismati.cl mediante análisis de la pila TCP/IP</li>
+                <li><span class="text-info">nmap -F prismati.cl</span> - Realiza un escaneo rápido de los puertos más comunes en el host prismati.cl</li><br>
+            </ul>
+            <li class="text-decoration-underline">OpenVAS:</li>
+            <p>Es un escáner de vulnerabilidades del sistema que verifica los puertos visibles, los servicios a los que puede acceder en busca de vulnerabilidades conocidas y amenazas web de alto nivel</p>
+            <p>Link de descarga: <a href="https://www.openvas.org">https://www.openvas.org</a></p>
+            <li class="text-decoration-underline">Nikto:</li>
+            <p>Es un escáner de vulnerabilidades de aplicaciones web de código abierto que realiza pruebas exhaustivas en servidores web para identificar archivos peligrosos, configuraciones inseguras y otros problemas de seguridad.</p>
+            <p>Link de descarga: <a href="https://github.com/sullo/nikto">https://github.com/sullo/nikto</a></p>
+        </ul>
+        <br><h4>Medida de proteccion/mitigacion:</h4>
+        <ul class="fs-5">
+            <li>Controlar el acceso a los puertos, monitorear la actividad sospechosa y minimizar la exposición de información técnica.</li>
+            <li>Configuración de firewalls estrictos para bloquear puertos innecesarios.</li>
+            <li>Implementación de IDS/IPS para detectar y bloquear escaneos.</li>
+            <li>Realización de pruebas internas de penetración para detectar vulnerabilidades.</li>
+            <li>Ocultación de versiones de servicios y cabeceras.</li>
+        </ul>
+        <br><h4>Video capsula:</h4>
+        <iframe class="m-3" width="560" height="315" src="https://www.youtube.com/embed/GpNk_WrSOGM?si=S5cCDveC1Szp4GDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="m-5 p-3" style="border: solid 2px black; border-radius: 20px; background-color: rgb(121, 103, 1);">
+        <h3>3. Fase de acceso</h3>
+        <p class="fs-5" style="text-align: justify;">
+            En esta etapa, con los datos ya obtenidos, el hacker procede a simular ataques a los sistemas en un entorno controlado, para ingresar en ellos las vulnerabilidades identificadas. Aqui es donde comenzará a poner a prueba la capacidad defensiva de los sistemas ante ataques como inyecciones SQL, ataques XSS, etc.
+        </p>
+        <h4>Tipos de ataque:</h4>
+        <ul class="fs-5">
+            <li class="text-decoration-underline">Inyección SQL:</li>
+            <p>Es un tipo de ciberataque encubierto en el cual un hacker inserta código propio en un sitio web con el fin de quebrantar las medidas de seguridad y acceder a datos protegidos. Una vez dentro, puede controlar la base de datos del sitio web y secuestrar la información de los usuarios. <br>Existen distintos tipos de inyeccion SQL, estos son:</p>
+            <ul>
+                <li class="fw-bold">Inyección SQL en banda:</li>
+                <p>La inyección SQL en banda es un tipo de ataque en el que un atacante interactúa directamente con la base de datos a través de una aplicación vulnerable, aprovechando respuestas inmediatas del servidor para ejecutar consultas maliciosas.</p>
+                    <p>Métodos comunes:
+                        <br>- Ataque basado en la Unión: Utiliza la cláusula UNION para combinar resultados de consultas maliciosas con las consultas legítimas.
+                        <br>- Ataque basado en errores: Aprovecha mensajes de error generados por el servidor para obtener información sobre la estructura de la base de datos.
+                    </p>
+                <li class="fw-bold">Inyección SQL Inferencial (Blind SQL Injection):</li>
+                <p>La inyección SQL inferencial (o inyeccion SQL ciega) es un tipo de ataque en el que el atacante no recibe resultados directos de sus consultas, sino que deduce la información basándose en cómo responde el servidor a ciertas condiciones.</p>
+                <p>Métodos comunes:
+                    <br>- Ataque Booleano: En una inyección SQL booleana, un atacante evalúa qué partes de la entrada de un usuario son vulnerables a las inyecciones SQL probando dos versiones diferentes de una cláusula booleana a través de la entrada
+                    <br>- Ataque basado en el tiempo: Un atacante utiliza una función predefinida basada en el tiempo del sistema de administración de la base de datos que es utilizada por la aplicación. Por ejemplo, en MySQL, la función sleep() le indica a la base de datos que espere un cierto número de segundos.
+                </p>
+                <li class="fw-bold">Inyección SQL fuera de banda:</li>
+                <p>La inyección SQL fuera de banda es un tipo de ataque en el que el atacante utiliza canales secundarios para extraer información o interactuar con la base de datos, sin depender directamente de la respuesta de la aplicación web. En MySQL, las funciones LOAD_FILE() y INTO OUTFILE pueden ser usadas para solicitar a MySQL que transmita los datos a una fuente externa.</p>
+            </ul>
+            <li class="text-decoration-underline">Ataque XSS:</li>
+            <p>Es un tipo de ataque en aplicaciones web que permite a un atacante inyectar scripts maliciosos en páginas web vistas por otros usuarios. Estos scripts suelen ejecutarse en el navegador del cliente y pueden robar datos sensibles o manipular la interfaz.</p>
+            <ul>
+                <li class="fw-bold">XSS Reflejado (Reflected XSS):</li>
+                <p>Este tipo de XSS ocurre cuando el script malicioso se envía como parte de una solicitud (por ejemplo, a través de un enlace o formulario) y el servidor lo refleja directamente en la respuesta sin validarlo. El script se ejecuta en el navegador de la víctima cuando interactúa con el enlace o el formulario comprometido.</p>
+                <li class="fw-bold">XSS Almacenado (Stored XSS):</li>
+                <p>El script malicioso se guarda de forma permanente en el servidor, generalmente en bases de datos o publicaciones de usuarios (como comentarios o perfiles). Cada vez que otros usuarios acceden al contenido afectado, el script se ejecuta automáticamente en sus navegadores.</p>
+            </ul>
+            <li class="text-decoration-underline">Desbordamiento de Buffer:</li>
+            <p>Un desbordamiento del buffer es una situación en la que un programa en ejecución intenta escribir datos fuera del buffer de memoria que no está destinado a almacenar estos datos. Cuando esto sucede, estamos hablando de un desbordamiento del buffer.</p>
+            <p>Las vulnerabilidades de desbordamiento del buffer se producen en todo tipo de software, desde sistemas operativos hasta aplicaciones cliente / servidor y software de escritorio. Esto sucede a menudo debido a una mala programación y la falta de validación de entrada o deficiente en el lado de la aplicación.</p>
+            <ul>
+                <li class="fw-bold">Consecuencias</li>
+                <p>Cuando se produce un desbordamiento del buffer de memoria y los datos se escriben fuera del buffer, el programa en ejecución puede volverse inestable, bloquearse o devolver información corrupta.</p>
+                <p>Las partes sobrescritas de la memoria pueden haber contenido otros datos importantes para la aplicación en ejecución que ahora se sobrescribe y ya no está disponible para el programa. Los desbordamientos del buffer pueden incluso ejecutar otros programas o comandos (maliciosos) y provocar la ejecución de código arbitrario.</p>
+            </ul>
+        </ul>
+        <h4>Medidas de proteccion contra ataques:</h4>
+        <ul class="fs-5">
+            <li class="text-decoration-underline">Inyección SQL</li>
+            <ul>
+                <li>Rechazar caracteres especiales como ', ", --, ; o /* que puedan usarse para manipular consultas SQL.</li>
+                <li>Implementar sentencias parametrizadas en lugar de concatenar entradas directamente en las consultas.</li>
+                <li>No exponer detalles técnicos en mensajes de error, ya que pueden proporcionar información útil para los atacantes.</li>
+            </ul>
+            <li class="text-decoration-underline">Ataque XSS</li>
+            <ul>
+                <li>Usar funciones que conviertan caracteres peligrosos (<, >, ', ") en entidades seguras. Por ejemplo la funcion de htmlspecialchars() puede convertir caracteres especiales en PHP</li>
+                <li>Validar todos los datos que ingresen los usuarios, rechazando cualquier código malicioso.</li>
+            </ul>
+            <li class="text-decoration-underline">Desbordamiento de Buffer</li>
+            <ul>
+                <li>Evitar que ocurran condiciones de desbordamiento del buffer en el código. 
+                    <br>Por ejemplo, cuando se espera un máximo de 8 bytes como datos de entrada, la cantidad de datos que se puede escribir en el buffer se limitará a 8 bytes en cualquier momento.
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div class="m-5 p-3" style="border: solid 2px black; border-radius: 20px; background-color: rgb(15, 82, 35);">
+        <h3>4. Fase de mantenimiento de acceso</h3>
+        <p class="fs-5" style="text-align: justify;">
+            Una vez el hacker ya haya vulnerado el sistema, el trabajo consiste en mantener ese acceso el mayor tiempo posible, con el fin de realizar multiples ataques y asi obtener hackear el sistema. Para seguir dentro del objetivo infectado, el hacker puede hacer uso de malware para controlar los sistemas y equipos sin ser detectado.
+        </p>
+        <h4>Tecnicas para mantenimiento de acceso:</h4>
+        <ul class="fs-5">
+            <li class="text-decoration-underline">Backdoors (Puertas traseras):</li>
+            <p>Instalación de programas o scripts que permiten acceso remoto al sistema sin pasar por controles de autenticación.</p>
+            <li class="text-decoration-underline">Escalación de privilegios:</li>
+            <p>Obtener privilegios administrativos en el sistema para evitar restricciones de acceso. Por ejemplo exploits específicos para vulnerabilidades del sistema operativo.</p>
+            <li class="text-decoration-underline">Abuso de cuentas legítimas:</li>
+            <p>Capturar credenciales de usuario y utilizarlas para acceder al sistema de manera legítima, dificultando su detección.</p>
+        </ul>
+        <h4>Politicas de seguridad:</h4>
+        <ul class="fs-5">
+            <li class="text-decoration-underline">Implementación de autenticación en dos pasos:</li>
+            <p>Requiere que los usuarios verifiquen su identidad mediante al menos dos factores: algo que saben (contraseña), algo que tienen (token o dispositivo móvil) o algo que son (biometría). Esto dificulta que un atacante use credenciales robadas.</p>
+            <li class="text-decoration-underline">Gestión estricta de privilegios mínimos:</li>
+            <p>Asegura que cada usuario solo tenga los permisos necesarios para realizar su trabajo, evitando que cuentas con acceso innecesario puedan ser explotadas. Esto incluye la segmentación de privilegios en sistemas críticos.</p>
+            <li class="text-decoration-underline">Política de rotación y complejidad de contraseñas:</li>
+            <p>Requiere que las contraseñas sean robustas (longitud mínima, combinación de caracteres) y se cambien regularmente. Además, el uso de un gestor de contraseñas reduce el riesgo de reutilización de credenciales.</p>
+        </ul>
+        <br><h4>Video capsula:</h4>
+        <iframe class="m-3" width="560" height="315" src="https://www.youtube.com/embed/zNuUcyPFPY4?si=xFpYCXesYpI-XClD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="m-5 p-3" style="border: solid 2px black; border-radius: 20px; background-color: rgb(19, 38, 90);">    
+        <h3>5. Fase de borrado de huellas</h3>
+        <p class="fs-5" style="text-align: justify;">
+            Finalmente, la tarea final del hacker consiste en eliminar cualquier rastro de su presencia en el objetivo que se ha atacado (computadoras, sitios web, redes). Para esto puede ocultar su direccion IP, eliminar archivos de registro o utilizar conexiones cifradas.
+        </p>
+        <h4>Herramientas:</h4>
+        <ul class="fs-5">
+            <li class="text-decoration-underline">Visor de eventos de Windows:</li>
+            <p>El Visor de eventos es una herramienta integrada en Windows que permite visualizar y gestionar los registros (logs) del sistema operativo. Estos registros documentan actividades clave del sistema, aplicaciones, y eventos de seguridad.</p>
+            <p>Caracteristicas principales:</p>
+            <ul>
+                <li>Almacena eventos categorizados por tipo: sistema, seguridad, aplicaciones, entre otros.</li>
+                <li>Permite filtrar y buscar eventos específicos.</li>
+                <li>Proporciona detalles como fecha, hora, usuario, origen del evento y nivel de gravedad (información, advertencia, error).</li>
+            </ul><br>
+            <p>Información que almacena:</p>
+            <ul>
+                <li>Eventos de inicio de sesión</li>
+                <li>Errores de aplicaciones</li>
+                <li>Cambios en la configuración del sistema</li>
+            </ul>
+        </ul>
+        <ul class="fs-5">
+            <li class="text-decoration-underline">Logs de Linux (archivos de registro):</li>
+            <p>Los sistemas Linux almacenan registros en archivos de texto ubicados generalmente en el directorio /var/log/. Estos logs documentan actividades del sistema, seguridad, servicios y aplicaciones.</p>
+            <p>Caracteristicas principales:</p>
+            <ul>
+                <li>Son accesibles y editables mediante un editor de texto o herramientas como cat, tail o less.</li>
+                <li>Los logs son gestionados por syslog o journald, dependiendo de la distribución.</li>
+                <li>Ofrecen una estructura cronológica y detallada de los eventos.</li>
+            </ul><br>
+            <p>Información que almacena:</p>
+            <ul>
+                <li>/var/log/auth.log: eventos relacionados con la autenticación (inicios de sesión exitosos y fallidos).</li>
+                <li>/var/log/syslog o /var/log/messages: registros generales del sistema.</li>
+                <li>/var/log/kern.log: mensajes del núcleo (kernel).</li>
+                <li>/var/log/httpd/: logs de servidores web Apache.</li>
+            </ul>
+        </ul>
+        <h4>Prevención del borrado de logs</h4>
+        <ul class="fs-5">
+            <li class="text-decoration-underline">Restricción de acceso:</li>
+            <p>Asegurar que solo usuarios privilegiados (por ejemplo, administradores o root) tengan permisos para leer o modificar los logs.</p>
+            <li class="text-decoration-underline">Centralización de registros:</li>
+            <p>Enviar los logs a un servidor centralizado de registro (como SIEM, Splunk, o Graylog). Esto asegura que los eventos se guarden fuera del sistema comprometido, dificultando su eliminación.</p>
+            <li class="text-decoration-underline">Configuración de inmutabilidad:</li>
+            <p>En Linux, usar el comando chattr +i en los archivos de log para marcarlos como inmutables, evitando que puedan ser modificados o borrados incluso por el usuario root.</p>
+            <li class="text-decoration-underline">Monitoreo y alertas:</li>
+            <p>Configurar herramientas como Tripwire o OSSEC para detectar cambios o intentos de eliminación de los archivos de registro.</p>
+        </ul>
+        <h4>Navegación anónima</h4>
+        <ul class="fs-5">
+            <li class="text-decoration-underline">Uso de la red Tor:</li>
+            <p>Permite navegar de manera anónima redirigiendo el tráfico a través de nodos intermedios cifrados, ademas de ofrecer acceso a servicios ocultos en la dark web.</p>
+            <li class="text-decoration-underline">VPN:</li>
+            <p>Oculta la dirección IP real al enrutar el tráfico a través de un servidor remoto, proporcionando cifrado para evitar que terceros intercepten la conexión.</p>
+            <li class="text-decoration-underline">Uso de sistemas operativos enfocados en anonimato:</li>
+            <p>Tails es un sistema operativo basado en Linux diseñado para preservar la privacidad y el anonimato.</p>
+            <li class="text-decoration-underline">Navegadores enfocados en privacidad:</li>
+            <p>Navegadores como Brave o Tor Browser bloquean rastreadores y eliminan cookies automáticamente.</p>
+        </ul>
+        <br><h4>Video capsula:</h4>
+        <iframe class="m-3" width="560" height="315" src="https://www.youtube.com/embed/t53ZW2Ly7PQ?si=IuTciLfs_rbY3Ue1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="m-5 p-3" style="border: solid 2px black; border-radius: 20px; background-color: rgb(33, 34, 36);">
+        <h3>Mas videos sobre ataques informaticos:</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <p class="fs-5 text-center text-decoration-underline">Video de formulario XSS y mitigación</p>
+                    <iframe class="d-flex" width="100%" height="400px" src="https://www.youtube.com/embed/g0gfsx7FBuI?si=FP1ydC6XrrZdLOmN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col-6">
+                    <p class="fs-5 text-center text-decoration-underline">Video de inicio sesión con Inyección SQL y mitigación</p>
+                    <iframe class="d-flex" width="100%" height="400px" src="https://www.youtube.com/embed/AyB84DfH6DM?si=kUWHJLKXsQelc8aI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
